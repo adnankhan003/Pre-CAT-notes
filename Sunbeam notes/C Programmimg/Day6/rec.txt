@@ -1,0 +1,139 @@
+
+IT Prints 0 finally 
+		5 
+int myfact(int num)
+{
+    int result; 
+
+    if( num == 0 )// terminating condtn 
+          return 1; 
+    else 
+        result = num * myfact( --num );           
+		 4  * myfact(4)    // 4 * 0  
+printf("%d\n ",result); 
+    return result; 
+}
+		4
+int myfact(int num)
+{
+    int result; 
+
+    if( num == 0 )// terminating condtn 
+          return 1; 
+    else 
+        result = num * myfact( --num );           
+		 3   * myfact(3)     // 2 * 0 
+printf("%d\n ",result); 
+    return result; 
+}
+
+		3
+int myfact(int num)
+{
+    int result; 
+
+    if( num == 0 )// terminating condtn 
+          return 1; 
+    else 
+        result = num * myfact( --num );           
+		 2  * myfact(2)   // 1 * 0   
+printf("%d\n ",result); 
+    return result; 
+}
+
+		2
+int myfact(int num)
+{
+    int result; 
+
+    if( num == 0 )// terminating condtn 
+          return 1; 
+    else 
+        result = num * myfact( --num );           
+		 1   * myfact(1)    ==>  0 *  1 
+ 
+    return result; 
+}
+
+		1
+int myfact(int num)
+{
+    int result; 
+
+    if( num == 0 )// terminating condtn 
+          return 1; 
+    else 
+        result = num * myfact( --num );           
+		 0   * myfact(0)  // 0 * 1    
+printf("%d\n ",result); 
+    return result; 
+}
+
+		0
+int myfact(int num)
+{
+    int result; 
+
+    if( num == 0 )// terminating condtn 
+          return 1; 
+    else 
+        result = num * myfact( --num );           
+		 
+printf("%d\n ",result); 
+    return result; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+num = 5 
+
+result = num * myfact( num-- );  // stack overflow / runtime error           
+	
+		5 ==> 4 
+	num * myfact( num-- );
+	       
+               5  ==> 4 
+	num * myfact( num-- );           
+
+		5 => 4  	
+	num * myfact( num-- );
+
+		5 ==> 4 
+	num * myfact( num-- ); 
+
+		5 
+	num * myfact( num-- ); 
+
+
+
+		int main( ) 
+		{
+			int num = 10; 
+			static int num2 = num ; // Error 
+			
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

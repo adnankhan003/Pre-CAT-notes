@@ -1,0 +1,19 @@
+#include<stdio.h>
+union testUnion
+{
+short int num;
+char ch[2];
+};
+int main()
+{
+union testUnion ut;
+ut.ch[0]=4;
+ut.ch[1]=4; 
+
+// 0000 0100 0000 0100 
+// decimal is => 1028 
+// ut.num-> read 2 bytes => 1028 
+
+printf("%d", ut.num);
+return 0;
+}
